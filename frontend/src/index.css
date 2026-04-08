@@ -1,0 +1,49 @@
+:root {
+  /* Inco brand – primary */
+  --inco-dark-blue: #1B3E86;
+  --inco-blue: #3673F5;
+  --inco-light-blue: #8EB1F9;
+  --inco-pale-blue: #E7EEFE;
+  /* Inco brand – accent */
+  --inco-dark-green: #0D7534;
+  --inco-green: #17D45C;
+  --inco-light-green: #7FE8A6;
+  --inco-pale-green: #E8FCF0;
+  /* UI */
+  --bg: #0a0e1a;
+  --surface: #111827;
+  --surface-hover: #1a2332;
+  --border: #2d3748;
+  --text: #E7EEFE;
+  --text-muted: #8EB1F9;
+  --error: #f87171;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(22, 115, 245, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
