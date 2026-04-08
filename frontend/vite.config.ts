@@ -6,4 +6,14 @@ export default defineConfig({
   define: {
     "process.env": {},
   },
+  resolve: {
+    alias: {
+      crypto: "crypto-browserify",
+      stream: "stream-browserify",
+      buffer: "buffer",
+    },
+  },
+  optimizeDeps: {
+    include: ["crypto-browserify", "stream-browserify", "buffer"],
+  },
 });

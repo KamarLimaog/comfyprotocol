@@ -652,3 +652,16 @@
   font-size: 0.85rem;
   font-weight: 600;
 }
+
+.row3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 520px) {
+  .row3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

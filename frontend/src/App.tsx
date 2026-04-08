@@ -9,6 +9,7 @@ import { Repay } from "./components/Repay";
 import { VaultCard } from "./components/VaultCard";
 import { ActivityTimeline } from "./components/ActivityTimeline";
 import { WalletInfoCard } from "./components/WalletInfoCard";
+import { SolanaLendingStub } from "./components/SolanaLendingStub";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { LENDING_ADDRESS, TOKEN_ADDRESS } from "./evm/useEvm";
@@ -54,13 +55,7 @@ function App() {
         ) : chain === "solana" ? (
           <div className="grid">
             <FaucetCard />
-            <div className="card">
-              <h2 style={{ margin: 0 }}>Solana lending</h2>
-              <p className="hint">
-                Full confidential lending on Solana is stubbed here. Use the faucet for demo devnet flow; EVM lending
-                stays on Base Sepolia.
-              </p>
-            </div>
+            <SolanaLendingStub />
           </div>
         ) : mode === "lite" ? (
           <div className="liteStack">
